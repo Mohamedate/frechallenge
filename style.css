@@ -1,0 +1,102 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: .3rem;
+    outline: none;
+}
+html { 
+    font-size: 10px;
+}
+.container { 
+    max-width: 600px;
+    margin: auto;
+    color: white;
+}
+
+body { 
+    background: url("image/fit.jpg") no-repeat ;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: sans-serif;
+    position: relative;
+}
+body::after { 
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #07073a85;
+    z-index: -1;
+}
+.container  h1 { 
+    text-align: center;
+    padding: 2rem 0 1rem;
+    font-weight: normal;
+    font-size: 2.5rem;
+    
+}
+.container p { 
+    text-align: center;
+    color: #ccc;
+    font-size: 2rem;
+    margin-bottom: 3rem
+}
+form { 
+    background: #020932c7;
+    display: flex;
+    flex-direction: column;
+    padding:  5rem 4rem ;
+    
+}
+@media (max-width: 767px) {
+    form { 
+      padding: 5rem 2rem;  
+    }
+}
+form label { 
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+  
+}
+form input { 
+    padding: .6rem;
+    border: none;
+    margin-bottom: 2rem;
+}
+form h3 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+form div { 
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+form input[type='radio'],
+form input[type='checkbox'] { 
+   display: inline-block;
+  margin: 0 1rem .5rem 0;
+  cursor: pointer;
+}
+form textarea { 
+    height: 10rem;
+    padding: 1rem 2rem;
+}
+form button { 
+    margin-top: 2rem;
+    border: none;
+    background: rgb(51, 156, 19);
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+form button:hover { 
+    background: rgb(27 94 7);
+}
